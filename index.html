@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raia, my Valentine 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOCK SCREEN -->
+<div id="lock-screen">
+    <div class="lock-box">
+        <h2>Hi Raia 💕</h2>
+        <p>Enter your birthday to unlock something special</p>
+        <input type="password" id="password-input" placeholder="MMDD" maxlength="8" inputmode="numeric">
+        <button onclick="checkPassword()">Unlock 💖</button>
+        <p id="error-msg"></p>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main-content" class="hidden-content">
+    <div class="hearts-bg"></div>
+    <div class="container">
+
+        <h1 class="main-title">
+            <span class="raia-name">Raia Cortez</span>, will you be my Valentine? 💕
+        </h1>
+
+        <div id="countdown">
+            💌 Countdown to Valentine’s Day:
+            <div id="timer"></div>
+        </div>
+
+        <div class="gif-container">
+            <img id="cat-gif" src="https://media.tenor.com/EBV7OT7ACfwAAAAj/u-u-qua-qua-u-quaa.gif" alt="cute character">
+        </div>
+
+        <div class="buttons">
+            <button id="yes-btn" onclick="handleYesClick()">Yes</button>
+            <button id="no-btn" onclick="handleNoClick()">No</button>
+        </div>
+
+        <div id="tease-toast"></div>
+        <p id="final-note" class="hidden-note"></p>
+
+        <div id="hearts-container"></div>
+        <div id="sparkles"></div>
+
+        <div id="secret-message" class="secret-hidden">
+            🌷 Secret Message Just For You 🌷<br><br>
+            From the moment you walked into my life, everything felt softer.<br>
+            I don’t just want you for Valentine’s Day…<br>
+            I want you for all my days.<br><br>
+            You’re my favorite person.<br>
+            My safe place.<br>
+            My best decision.<br><br>
+            I love you, Raia. Always. 💕
+        </div>
+
+    </div>
+</div>
+
+<!-- MUSIC (Optional) -->
+<!-- Use Spotify embed or local file if you have permission -->
+<!-- <audio id="bg-music" loop>
+    <source src="music/wildflower.mp3" type="audio/mpeg">
+</audio> -->
+
+<script src="script.js"></script>
+</body>
+</html>
