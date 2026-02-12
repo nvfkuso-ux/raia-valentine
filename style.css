@@ -1,4 +1,4 @@
-/* GLOBAL STYLING */
+/* ================= GLOBAL STYLING ================= */
 body, html {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body, html {
     overflow-x: hidden;
 }
 
-/* GLOWING NAME */
+/* ================= GLOWING NAME ================= */
 .raia-name {
     font-family: 'Pacifico', cursive;
     font-size: 1.8rem;
@@ -21,7 +21,7 @@ body, html {
     to { text-shadow: 0 0 20px #ff2e7a; }
 }
 
-/* LOCK SCREEN */
+/* ================= LOCK SCREEN ================= */
 #lock-screen {
     position: fixed;
     inset: 0;
@@ -66,6 +66,7 @@ body, html {
     background: #ff6fa5;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #error-msg {
@@ -75,12 +76,12 @@ body, html {
     min-height: 20px;
 }
 
-/* HIDDEN MAIN CONTENT */
+/* ================= HIDDEN MAIN CONTENT ================= */
 .hidden-content {
     display: none;
 }
 
-/* COUNTDOWN */
+/* ================= COUNTDOWN ================= */
 #countdown {
     margin-bottom: 15px;
     font-weight: 700;
@@ -93,7 +94,7 @@ body, html {
     margin-top: 5px;
 }
 
-/* GIF */
+/* ================= GIF ================= */
 .gif-container {
     margin: 20px 0;
     text-align: center;
@@ -104,7 +105,7 @@ body, html {
     border-radius: 15px;
 }
 
-/* BUTTONS */
+/* ================= BUTTONS ================= */
 .buttons {
     display: flex;
     justify-content: center;
@@ -123,7 +124,7 @@ body, html {
     transition: transform 0.3s;
 }
 
-/* TEASE TOAST */
+/* ================= TEASE TOAST ================= */
 #tease-toast {
     text-align: center;
     margin-bottom: 15px;
@@ -131,13 +132,13 @@ body, html {
     font-weight: 700;
 }
 
-/* FINAL NOTE */
+/* ================= FINAL NOTE ================= */
 .hidden-note {
     font-size: 1rem;
     margin-top: 10px;
 }
 
-/* SECRET MESSAGE */
+/* ================= SECRET MESSAGE ================= */
 .secret-hidden {
     margin-top: 25px;
     padding: 15px;
@@ -155,7 +156,7 @@ body, html {
     transform: scale(1);
 }
 
-/* HEARTS */
+/* ================= HEARTS ================= */
 #hearts-container, #sparkles {
     position: fixed;
     top: 0;
@@ -182,7 +183,7 @@ body, html {
     }
 }
 
-/* SHAKE ANIMATION FOR 3RD ATTEMPT */
+/* ================= SHAKE ANIMATION ================= */
 @keyframes shake {
     0% { transform: translateX(0); }
     25% { transform: translateX(-8px); }
@@ -193,4 +194,11 @@ body, html {
 
 .shake {
     animation: shake 0.4s ease;
+}
+
+/* ================= SPOTIFY PLAYER ================= */
+.music-player {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
